@@ -12,8 +12,62 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          
+          <div className={styles.part} >
+              <div style={{backgroundImage: `url(PX-pariswheel.jpg)`}} className={styles.section} >
+                
+              </div>
+              <section className={styles.section} >
+                <h1>Radioaktiv Stråling</h1>
+                <span className={styles.break}/>
+                <ul>
+                  <li><a href='#whatitis'>Hva er radioaktivitet?</a></li>
+                  <li>Strålings typer?</li>
+                  <li>Hvorfor?</li>
+                  <li>Hvorfor?</li>
+                  <li>Hvorfor?</li>
+                </ul>
+              </section>
+          </div>
+          <div className={styles.partHorizontal} >
+              <div style={{backgroundImage: `url(PX-BW.jpg)`}} className={styles.parralax} >
+                <section className={styles.section}>
+                  <h1>Radioaktivitet</h1>
+                </section>
+              </div>
+              <section className={styles.section} >
+                <h1>Radioaktiv Stråling</h1>
+                <span className={styles.break}/>
+                <p>Radioaktivitet er et menneskapt hellvete som kan både drive vår fremtid, men også ødelegge den. 
+                  Det viktigste er hvordan vi bruker kraften.</p>
+              </section>
+          </div>
+          <div id='whatitis' className={styles.part} >
+              <section className={styles.section} >
+                <h1>Radioaktiv Stråling</h1>
+                <span className={styles.break}/>
+                <ul>
+                  <li>Hvorfor?</li>
+                  <li>Hvorfor?</li>
+                  <li>Hvorfor?</li>
+                  <li>Hvorfor?</li>
+                  <li>Hvorfor?</li>
+                </ul>
+              </section>
+              <div style={{backgroundImage: `url(PX-pariswheel.jpg)`}} className={styles.section} >
+                
+              </div>
+              <div style={{backgroundImage: `url(PX-pariswheel.jpg)`}} className={styles.section} >
+                
+                </div>
+          </div>
       </main>
+
+
+      <style jsx>{`
+        .img {
+          position: relative;
+        }
+        `}</style>
     </div>
   )
 }

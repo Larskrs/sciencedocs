@@ -1,17 +1,129 @@
 .container {
-  padding: 0 2rem;
+
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 
 .section {
+  padding: 1rem;
+  min-height: 100%;
+  width: 50%;
+  scale: 1;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: rgb(224, 224, 224);
+}
+.section:hover{
+  width: 70%;
+  scale: 1;
+}
+
+.part {
+  min-height: 500px;
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.container p {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.partHorizontal {
+  min-height: 500px;
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+.partHorizontal .section {
+  min-height: 300px;
+  width: 100%;
+}
+.parralax {
+  width: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.parralax .section {
+  min-height: fit-content;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  filter: blur(none);
+  width: auto;
+}
+.parralax:hover {
+  scale: 1.1;
+}
+@media only screen and (max-width: 800px) {
+
+  .part {
+    display: flex;
+    flex-direction: column;
+  }
+  .section {
+    width: 100%;
+    min-height: 500px;
+  }
+  .section:hover {
+    width: 100%;
+  }
+}
+.bg {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.break {
+  display: inline;
+  width: 100%;
+  margin-block: .5rem;
+  height: 1px;
+  border: .1rem solid black;
+}
+.section h1 {
+  font-size: 2.5rem;
+}
+.section ul {
+  margin: 0;
+  background-color: rgb(214, 214, 214);
+  padding: 1rem;
+}
+.section li {
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.section li:hover {
+  transform: translateX(10px);
+}
+.section li > a {
+  cursor: pointer;
 }
